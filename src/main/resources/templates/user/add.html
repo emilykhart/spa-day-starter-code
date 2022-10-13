@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8" />
+    <title>Spa Menu</title>
+    <link href="../static/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet" />
+</head>
+<body>
+    <div>
+    <form method="post" action="/user">
+        <label>Usernmame: <input type="text" name="username"></label>
+        <label>Email: <input type="email" name="email"></label><br>
+        <label>Password: <input type="password" name="password"></label>
+        <label>Confirm Password: <input type="password" name="verify"></label>
+        <button>Register!</button>
+    </form>
+    </div>
+</body>
+</html>
